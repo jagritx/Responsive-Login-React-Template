@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import styled, { ThemeProvider } from "styled-components";
+import { darkTheme, lightTheme } from "./utils/theme";
+import "./App.css";
+import Login from "./pages/Login";
 
+const Main = styled.div`
+  background-color: ${({ theme }) => theme.bg};
+`;
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+      <Main>
+        <Login darkMode={darkMode} setDarkMode={setDarkMode} />
+      </Main>
+    </ThemeProvider>
   );
 }
 
