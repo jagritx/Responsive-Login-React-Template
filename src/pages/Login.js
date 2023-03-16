@@ -27,10 +27,10 @@ const Logo = styled.img`
 `;
 
 const Container = styled.div`
-  margin: 0% -20%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  gap: 30%;
 `;
 
 const Login = (props) => {

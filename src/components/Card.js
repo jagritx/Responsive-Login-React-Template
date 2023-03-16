@@ -7,7 +7,7 @@ const Container = styled.div`
   top: -230px;
   background-color: ${({ theme }) => theme.accent};
   margin: 0;
-  height: 70vh;
+  height: 65vh;
   width: 300px;
   border-radius: 20px;
   padding: 30px;
