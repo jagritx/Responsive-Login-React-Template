@@ -20,6 +20,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: 0.3s;
   :hover {
     box-shadow: inset 0 0 0 5px ${({ theme }) => theme.text};
   }

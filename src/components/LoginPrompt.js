@@ -30,6 +30,7 @@ const NameForm = styled.div`
 `;
 const MailField = styled.input`
   background-color: transparent;
+  color: ${({ theme }) => theme.text};
   border: none;
   border-radius: 10px;
   margin: 10px;
@@ -57,6 +58,7 @@ const DropDown = styled.button`
 `;
 const PassField = styled.input`
   background-color: ${({ theme }) => theme.inputs};
+  color: ${({ theme }) => theme.text};
   border: none;
   border-radius: 10px;
   height: 30px;
